@@ -1,13 +1,65 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.question-wrapper {
+  padding: 15px;
+  background-color: black;
+}
+.question-wrapper input {
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  border-width: 0;
+  width: 90%;
+}
+.question-wrapper input:focus {
+  outline: 0px !important;
+}
+.question-wrapper .search-btn {
+  background-color: gold;
+  border: 0px;
+  padding: 10px;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.search-result,
+.map-wrapper {
+  background-color: #e9e9e9;
+  padding: 15px;
+  font-size: 14px;
+  color: #505050;
+}
+.map-wrapper {
+  display: block;
+  height: 90vh;
+  padding: 15px 40px;
+}
+.search-result-inner {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  line-height: 2;
+  width: 95%;
+  margin: 0 auto;
+}
+.error-msg {
+  font-size: 14px;
+  font-weight: 400;
+  color: red;
+  padding: 20px;
+  margin: 0;
 }
